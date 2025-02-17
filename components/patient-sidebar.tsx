@@ -9,7 +9,7 @@ import { LayoutDashboard, Activity, PillIcon, Calendar, MessageSquare, Settings 
 const sidebarNavItems = [
   {
     title: "Dashboard",
-    href: "/patient/dashboard",
+    href: "/patient",
     icon: LayoutDashboard,
   },
   {
