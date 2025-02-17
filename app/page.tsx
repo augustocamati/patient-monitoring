@@ -51,7 +51,7 @@ export default function DashboardPage() {
         </Card>
         <Card className="col-span-3">
           <CardHeader>
-            <CardTitle>Leityras Recentes</CardTitle>
+            <CardTitle>Leituras Recentes</CardTitle>
           </CardHeader>
           <CardContent>
             <RecentReadings />
