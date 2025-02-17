@@ -9,7 +9,7 @@ export default function DashboardPage() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Patients</CardTitle>
+            <CardTitle className="text-sm font-medium">Total de Pacientes</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">1,234</div>
@@ -17,7 +17,7 @@ export default function DashboardPage() {
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Critical Alerts</CardTitle>
+            <CardTitle className="text-sm font-medium">Alertas criticos</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-red-600">23</div>
@@ -43,7 +43,7 @@ export default function DashboardPage() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
         <Card className="col-span-4">
           <CardHeader>
-            <CardTitle>Overview</CardTitle>
+            <CardTitle>Geral</CardTitle>
           </CardHeader>
           <CardContent className="pl-2">
             <Overview />
@@ -51,7 +51,7 @@ export default function DashboardPage() {
         </Card>
         <Card className="col-span-3">
           <CardHeader>
-            <CardTitle>Recent Readings</CardTitle>
+            <CardTitle>Leityras Recentes</CardTitle>
           </CardHeader>
           <CardContent>
             <RecentReadings />
