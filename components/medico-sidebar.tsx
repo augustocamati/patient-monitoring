@@ -3,16 +3,17 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-export function PatientSidebar() {
+export function MedicoSidebar() {
   const pathname = usePathname()
 
   const menuItems = [
-    { href: "/patient", label: "Dashboard", icon: "dashboard" },
-    { href: "/patient/readings", label: "Leituras", icon: "monitoring" },
-    { href: "/patient/medications", label: "Medicações", icon: "medication" },
-    { href: "/patient/appointments", label: "Consultas", icon: "calendar_today" },
-    { href: "/patient/messages", label: "Mensagens", icon: "chat", badge: 1 },
-    { href: "/patient/settings", label: "Configurações", icon: "settings" },
+    { href: "/", label: "Dashboard", icon: "dashboard" },
+    { href: "/pacientes", label: "Pacientes", icon: "people" },
+    { href: "/monitoramento", label: "Monitoramento", icon: "monitoring" },
+    { href: "/medicacoes", label: "Medicações", icon: "medication" },
+    { href: "/mensagens", label: "Mensagens", icon: "chat", badge: 3 },
+    { href: "/consultas", label: "Consultas", icon: "calendar_today" },
+    { href: "/analises", label: "Análises", icon: "analytics" },
   ]
 
   return (

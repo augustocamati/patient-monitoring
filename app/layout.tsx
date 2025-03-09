@@ -1,14 +1,14 @@
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
-
+import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
-
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Patient Monitoring System",
-  description: "Monitor chronic disease patients efficiently",
+  title: "Sistema de Monitoramento de Pacientes",
+  description: "Monitore pacientes com doenças crônicas de forma eficiente",
     generator: 'v0.dev'
 }
 
@@ -18,17 +18,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-col min-h-screen">
-            <header className="bg-background border-b">
-              <div className="container flex h-16 items-center">
-                <MainNav />
-              </div>
-            </header>
-            <main className="flex-1 container py-6">{children}</main>
-          </div>
+    <html lang="pt-BR">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+      </head>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          {children}
         </ThemeProvider>
       </body>
     </html>
@@ -38,4 +37,3 @@ export default function RootLayout({
 
 
 import './globals.css'
-import { MainNav } from "@/components/main-nav"
